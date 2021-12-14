@@ -1,0 +1,13 @@
+0.7
+2020.2
+Jun 10 2021
+20:04:57
+D:/vivado_project/lab3/lab3.sim/sim_1/behav/xsim/glbl.v,1623370582,verilog,,,,glbl,,,,,,,,
+D:/vivado_project/lab3/lab3.srcs/sim_1/new/testBCD.v,1630929054,verilog,,,,testBCD,,,,,,,,
+D:/vivado_project/lab3/lab3.srcs/sim_1/new/testDebounce.v,1630996180,verilog,,,,testDebounce,,,,,,,,
+D:/vivado_project/lab3/lab3.srcs/sim_1/new/testSinglePulser.v,1630921672,verilog,,,,testSinglePulser,,,,,,,,
+D:/vivado_project/lab3/lab3.srcs/sources_1/new/BCD.v,1630946344,verilog,,D:/vivado_project/lab3/lab3.srcs/sim_1/new/testBCD.v,,BCD,,,,,,,,
+D:/vivado_project/lab3/lab3.srcs/sources_1/new/DFF.v,1630990904,verilog,,D:/vivado_project/lab3/lab3.srcs/sources_1/new/debounce.v,,DFF,,,,,,,,
+D:/vivado_project/lab3/lab3.srcs/sources_1/new/clockDiv.v,1630991398,verilog,,D:/vivado_project/lab3/lab3.srcs/sources_1/new/debounce.v,,clockDiv;clockDiv28,,,,,,,,
+D:/vivado_project/lab3/lab3.srcs/sources_1/new/debounce.v,1630996840,verilog,,D:/vivado_project/lab3/lab3.srcs/sources_1/new/singlePulser.v,,debounce,,,,,,,,
+D:/vivado_project/lab3/lab3.srcs/sources_1/new/singlePulser.v,1630947330,verilog,,D:/vivado_project/lab3/lab3.srcs/sim_1/new/testDebounce.v,,singlePulser,,,,,,,,

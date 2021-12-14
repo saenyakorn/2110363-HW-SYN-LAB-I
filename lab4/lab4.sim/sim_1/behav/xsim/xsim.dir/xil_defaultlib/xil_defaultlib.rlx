@@ -1,0 +1,13 @@
+0.7
+2020.2
+Jun 10 2021
+20:04:57
+D:/vivado_project/lab4/lab4.sim/sim_1/behav/xsim/glbl.v,1623370582,verilog,,,,glbl,,,,,,,,
+D:/vivado_project/lab4/lab4.srcs/sim_1/new/TestALU.v,1631542030,verilog,,,,TestALU,,,,,,,,
+D:/vivado_project/lab4/lab4.srcs/sim_1/new/TestDebounce.v,1631450454,verilog,,,,TestDebounce,,,,,,,,
+D:/vivado_project/lab4/lab4.srcs/sim_1/new/TestRam.v,1631460810,verilog,,,,TestRam,,,,,,,,
+D:/vivado_project/lab4/lab4.srcs/sim_1/new/TestSinglePulser.v,1631448924,verilog,,,,TestSinglePulser,,,,,,,,
+D:/vivado_project/lab4/lab4.srcs/sim_1/new/TestStack.v,1631524744,verilog,,,,TestStack,,,,,,,,
+D:/vivado_project/lab4/lab4.srcs/sources_1/new/ALU_BCD.v,1631541974,verilog,,D:/vivado_project/lab4/lab4.srcs/sim_1/new/TestALU.v,,ALU_BCD,,,,,,,,
+D:/vivado_project/lab4/lab4.srcs/sources_1/new/Debounce.v,1631450440,verilog,,D:/vivado_project/lab4/lab4.srcs/sim_1/new/TestDebounce.v,,Debounce;SinglePulser,,,,,,,,
+D:/vivado_project/lab4/lab4.srcs/sources_1/new/Ram.v,1631525122,verilog,,D:/vivado_project/lab4/lab4.srcs/sim_1/new/TestStack.v,,Ram;Stack,,,,,,,,

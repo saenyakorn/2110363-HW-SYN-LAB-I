@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"nano_sc_system_func_synth.v" \
+"../../../../../lab5.srcs/sources_1/new/adder.v" \
+"../../../../../lab5.srcs/sources_1/new/alu.v" \
+"../../../../../lab5.srcs/sources_1/new/control.v" \
+"../../../../../lab5.srcs/sources_1/new/extender.v" \
+"../../../../../lab5.srcs/sources_1/new/memory.v" \
+"../../../../../lab5.srcs/sources_1/new/mux2_1.v" \
+"../../../../../lab5.srcs/sources_1/new/nanocpu.v" \
+"../../../../../lab5.srcs/sources_1/new/regfile.v" \
+"../../../../../lab5.srcs/sources_1/new/rom.v" \
+"../../../../../lab5.srcs/sources_1/new/nano_sc_system.v" \
+
+# Do not sort compile order
+nosort

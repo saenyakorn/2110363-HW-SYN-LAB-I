@@ -1,0 +1,8 @@
+0.7
+2020.2
+Jun 10 2021
+20:04:57
+D:/vivado_project/lab2/lab2.sim/sim_1/behav/xsim/glbl.v,1623370582,verilog,,,,glbl,,,,,,,,
+D:/vivado_project/lab2/lab2.srcs/sim_1/new/system_sim.v,1630412994,verilog,,,,system_sim,,,,,,,,
+D:/vivado_project/lab2/lab2.srcs/sources_1/new/hexToSevenSegment.v,1630409916,verilog,,D:/vivado_project/lab2/lab2.srcs/sources_1/new/quadSevenSegment.v,,hexToSevenSegment,,,,,,,,
+D:/vivado_project/lab2/lab2.srcs/sources_1/new/quadSevenSegment.v,1630413156,verilog,,D:/vivado_project/lab2/lab2.srcs/sim_1/new/system_sim.v,,quadSevenSegment,,,,,,,,

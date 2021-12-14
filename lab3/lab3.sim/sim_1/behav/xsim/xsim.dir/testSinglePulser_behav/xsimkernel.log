@@ -1,0 +1,4 @@
+Running: xsim.dir/testSinglePulser_behav/xsimk.exe -simmode gui -wdb testSinglePulser_behav.wdb -simrunnum 0 -socket 60047
+Design successfully loaded
+Design Loading Memory Usage: 6600 KB (Peak: 6600 KB)
+Design Loading CPU Usage: 0 ms

@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/lab1/lab1.srcs/sources_1/new/NShift.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NShift
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/lab1/lab1.srcs/sim_1/new/testNShift.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testNShift

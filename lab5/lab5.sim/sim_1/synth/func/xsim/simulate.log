@@ -1,0 +1,52 @@
+Time resolution is 1 ps
+WARNING: File prog5.list referenced on D:/vivado_project/lab5/lab5.srcs/sources_1/new/rom.v at line 21 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+         2 - A(REG[ x]) -  xxxxxxxx, B(REG[ x]) -  xxxxxxxx
+
+         6 - A(REG[ x]) -  xxxxxxxx, B(REG[ x]) -  xxxxxxxx
+
+        10 - A(REG[ x]) -  xxxxxxxx, B(REG[ x]) -  xxxxxxxx
+
+        14 - A(REG[ x]) -  xxxxxxxx, B(REG[ x]) -  xxxxxxxx
+
+        18 - A(REG[ x]) -  xxxxxxxx, B(REG[ x]) -  xxxxxxxx
+
+        22 - A(REG[ x]) -  xxxxxxxx, B(REG[ x]) -  xxxxxxxx
+
+        26 - A(REG[ x]) -  xxxxxxxx, B(REG[ x]) -  xxxxxxxx
+
+        30 - A(REG[ x]) -  xxxxxxxx, B(REG[ x]) -  xxxxxxxx
+
+        34 - A(REG[ x]) -  xxxxxxxx, B(REG[ x]) -  xxxxxxxx
+
+        38 - A(REG[ x]) -  xxxxxxxx, B(REG[ x]) -  xxxxxxxx
+
+        42 - A(REG[ x]) -  xxxxxxxx, B(REG[ x]) -  xxxxxxxx
+
+        46 - A(REG[ x]) -  xxxxxxxx, B(REG[ x]) -  xxxxxxxx
+
+        50 - A(REG[ x]) -  xxxxxxxx, B(REG[ x]) -  xxxxxxxx
+
+        54 - A(REG[ x]) -  xxxxxxxx, B(REG[ x]) -  xxxxxxxx
+
+        58 - A(REG[ x]) -  xxxxxxxx, B(REG[ x]) -  xxxxxxxx
+
+        62 - A(REG[ x]) -  xxxxxxxx, B(REG[ x]) -  xxxxxxxx
+
+        66 - A(REG[ x]) -  xxxxxxxx, B(REG[ x]) -  xxxxxxxx
+
+        70 - A(REG[ x]) -  xxxxxxxx, B(REG[ x]) -  xxxxxxxx
+
+        74 - A(REG[ x]) -  xxxxxxxx, B(REG[ x]) -  xxxxxxxx
+
+        78 - A(REG[ x]) -  xxxxxxxx, B(REG[ x]) -  xxxxxxxx
+
+        82 - A(REG[ x]) -  xxxxxxxx, B(REG[ x]) -  xxxxxxxx
+
+        86 - A(REG[ x]) -  xxxxxxxx, B(REG[ x]) -  xxxxxxxx
+
+        90 - A(REG[ x]) -  xxxxxxxx, B(REG[ x]) -  xxxxxxxx
+
+        94 - A(REG[ x]) -  xxxxxxxx, B(REG[ x]) -  xxxxxxxx
+
+        98 - A(REG[ x]) -  xxxxxxxx, B(REG[ x]) -  xxxxxxxx
+

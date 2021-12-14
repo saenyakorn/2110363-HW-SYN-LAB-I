@@ -1,0 +1,15 @@
+0.7
+2020.2
+Jun 10 2021
+20:04:57
+D:/vivado_project/lab1/lab1.sim/sim_1/behav/xsim/glbl.v,1623370582,verilog,,,,glbl,,,,,,,,
+D:/vivado_project/lab1/lab1.srcs/sim_1/new/testDFlipFlop.v,1629775216,verilog,,,,testDFlipFlop,,,,,,,,
+D:/vivado_project/lab1/lab1.srcs/sim_1/new/testNShift.v,1629980384,verilog,,,,testNShift,,,,,,,,
+D:/vivado_project/lab1/lab1.srcs/sim_1/new/testShift.v,1629781082,verilog,,,,testShift,,,,,,,,
+D:/vivado_project/lab1/lab1.srcs/sim_1/new/tester.v,1629776836,verilog,,,,tester,,,,,,,,
+D:/vivado_project/lab1/lab1.srcs/sources_1/new/DFlipFlop.v,1629775230,verilog,,D:/vivado_project/lab1/lab1.srcs/sim_1/new/testDFlipFlop.v,,DFlipFlop,,,,,,,,
+D:/vivado_project/lab1/lab1.srcs/sources_1/new/NShift.v,1629980260,verilog,,D:/vivado_project/lab1/lab1.srcs/sim_1/new/testNShift.v,,NShift,,,,,,,,
+D:/vivado_project/lab1/lab1.srcs/sources_1/new/fulladder.v,1629776092,verilog,,D:/vivado_project/lab1/lab1.srcs/sim_1/new/tester.v,,fulladder,,,,,,,,
+D:/vivado_project/lab1/lab1.srcs/sources_1/new/fulladder_2.v,1629771460,verilog,,D:/vivado_project/lab1/lab1.srcs/sim_1/new/tester.v,,fulladder_2,,,,,,,,
+D:/vivado_project/lab1/lab1.srcs/sources_1/new/shiftA.v,1629777826,verilog,,D:/vivado_project/lab1/lab1.srcs/sources_1/new/shiftB.v,,shiftA,,,,,,,,
+D:/vivado_project/lab1/lab1.srcs/sources_1/new/shiftB.v,1629777924,verilog,,D:/vivado_project/lab1/lab1.srcs/sim_1/new/testShift.v,,shiftB,,,,,,,,
