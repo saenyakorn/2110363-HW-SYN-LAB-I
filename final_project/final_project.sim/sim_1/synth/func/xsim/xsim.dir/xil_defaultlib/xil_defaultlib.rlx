@@ -1,0 +1,7 @@
+0.7
+2020.2
+Jun 10 2021
+20:04:57
+D:/vivado_project/final_project/final_project.sim/sim_1/synth/func/xsim/TestSQRT_func_synth.v,1639682380,verilog,,D:/vivado_project/final_project/final_project.srcs/sources_1/new/SQRT.v,,BaudrateGenerator;Queue;System;TransformData;UART;UART_RX;UART_TX;glbl,,,,,,,,
+D:/vivado_project/final_project/final_project.srcs/sim_1/new/TestSQRT.v,1639682318,verilog,,,,TestSQRT,,,,,,,,
+D:/vivado_project/final_project/final_project.srcs/sources_1/new/SQRT.v,1639682162,verilog,,D:/vivado_project/final_project/final_project.srcs/sim_1/new/TestSQRT.v,,SQRT,,,,,,,,
