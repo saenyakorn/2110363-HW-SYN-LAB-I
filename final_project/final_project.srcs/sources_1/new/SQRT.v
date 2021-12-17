@@ -24,32 +24,24 @@ module SQRT #(
     parameter DATA_WIDTH = 32,
     parameter RESULT_WIDTH = DATA_WIDTH/2
     )(
-    output [DATA_WIDTH-1:0] Q,
-    input [RESULT_WIDTH-1:0] D
+    output [RESULT_WIDTH-1:0] Q,
+    input [DATA_WIDTH-1:0] D
     );
     
-    function [RESULT_WIDTH-1:0] sqrt;
-        input [DATA_WIDTH-1:0] D;
-        reg [RESULT_WIDTH-1:0] R;
-        reg [RESULT_WIDTH-1:0] Q;
-        integer i;
-    begin
-        R = 0;
-        Q = 0;
-        for(i=DATA_WIDTH-1; i>=0; i=i+1) begin
-            if(R>=0) begin
-                R = (R<<2) | (D>>(i+i)&3);
-                R = R - ((Q<<2) | 1);
-            end else begin
-                R = (R<<2) | (D>>(i+i)&3);
-                R = R - ((Q<<2) | 3);
-            end
-            if(R>=0) Q = (Q<<1) | 1;
-            else Q = (Q<<1) | 0;
-        end
-        sqrt = Q;
-    end endfunction
+    wire [RESULT_WIDTH-1:0] r [0:RESULT_WIDTH];
+    wire [RESULT_WIDTH-1:0] q [0:RESULT_WIDTH];
     
-    assign Q = sqrt(D);
+    genvar i;
+    assign r[RESULT_WIDTH] = 0;
+    assign q[RESULT_WIDTH] = 0;
+    assign Q = q[0];
+    generate for (i=RESULT_WIDTH-1; i>=0; i=i-1) begin
+        assign r[i] = r[i+1][RESULT_WIDTH-1] == 0 ? 
+            ((r[i+1] << 2) | ((D>>(i+i)) & 3)) - ((q[i+1] << 2) | 1) :
+            ((r[i+1] << 2) | ((D>>(i+i)) & 3)) + ((q[i+1] << 2) | 3);
+        assign q[i] = r[i][RESULT_WIDTH-1] == 0 ? 
+            (q[i+1]<<1) | 1 :
+            (q[i+1]<<1) | 0;
+    end endgenerate
     
 endmodule

@@ -35,6 +35,17 @@ module TransformData #(
     );
     
     reg [3:0] mode = 0;
+    reg [5:0] i = 0;
+    reg [5:0] j = 0;
+    reg lastReceived;
+    reg [3:0] point = 0;
+    reg startNewLine = 0;  
+    // 0.000001 in decimal -> 1 in binary
+    reg [NUMBER_BITS-1:0] storedNumber = 0;    
+    reg [NUMBER_BITS-1:0] currentNumber = 0;   
+    wire [NUMBER_BITS-1:0] sqrtNumber; 
+    
+    SQRT #(.DATA_WIDTH(NUMBER_BITS))sqrt(.Q(sqrtNumber), .D(storedNumber * 10**6));
     
     function [NUMBER_BITS-1:0] operate;
         input [NUMBER_BITS-1:0] numA;
@@ -46,7 +57,7 @@ module TransformData #(
             2: operate = numA - numB;
             3: operate = (numA * numB) / 10**6;
             4: operate = (numA*(10**6)) / numB;
-            5: operate = numB; // SQRT
+            5: operate = sqrtNumber;
             6: operate = 0;
         endcase
     endfunction
@@ -86,6 +97,7 @@ module TransformData #(
         .clk(clk)
         );
     
+    // FOR TRANSMITTING
     always @(posedge clk) begin
         // SET ENABLE TO 0 IF TRANSMITTING
         if(~sent && enable) begin
@@ -102,15 +114,7 @@ module TransformData #(
             end
         end
     end
-    
-    reg [5:0] i = 0;
-    reg [5:0] j = 0;
-    reg lastReceived;
-    reg [3:0] point = 0;
-    reg startNewLine = 0;  
-    reg [NUMBER_BITS-1:0] storedNumber = 0;    
-    reg [NUMBER_BITS-1:0] currentNumber = 0;    
-    
+        
     genvar c;
     wire [WORD_SIZE-1:0] digits[0:11];
     wire [NUMBER_BITS-1:0] tempNumber[0:12];
@@ -139,6 +143,7 @@ module TransformData #(
             assign numbers[d] = currentNumber * (10**(7-d));
     end endgenerate
     
+    // FOR RECIEVING
     always @(posedge clk) begin
         // DATA MANIPULATION AFTER RECEIVED DATA
         if(~lastReceived && received) begin
@@ -177,34 +182,41 @@ module TransformData #(
         lastReceived <= received;
         
         // APPEND DATA TO QUEUE (ENTER CASE)
-        if(inputKey == 13) begin
+        if(inputKey == 13 && tempNumber[12] < 10**12) begin
             push <= 1;
-            if(i == 0) begin
-                dataIn <= 10; // NEWLINE
-                i <= i+1;
-            end else if(i == 1) begin
-                dataIn <= 13; // RETURN CARRIAGE
-                i <= i+1;
-            end else if(i == 2) begin
-                dataIn <= isPositive ? "+" : "-";
-                i <= i+1;
-            end else if((3 <= i && i <= 15) && i!=9) begin
-                dataIn <= digits[i>=9 ? 15-i : 14-i];
-                i <= i+1;
-            end else if(i == 9) begin
-                dataIn <= ".";
-                i <= i+1;
-            end else if(i == 16) begin
-                dataIn <= ">";
-                i <= i+1;
-            end else if(i == 17) begin
-                dataIn <= " ";
-                i <= i+1;
-            end else begin
+            if(i == 0) dataIn <= 10; // NEWLINE
+            else if(i == 1) dataIn <= 13; // RETURN CARRIAGE
+            else if(i == 2) dataIn <= isPositive ? "+" : "-";
+            else if((3 <= i && i <= 15) && i!=9) dataIn <= digits[i>=9 ? 15-i : 14-i];
+            else if(i == 9) dataIn <= ".";
+            else if(i == 16) dataIn <= ">";
+            else if(i == 17) dataIn <= " ";
+            if(i < 18) i <= i+1;
+            else begin
                 push <= 0;
                 inputKey <= 0;
                 i <= 0;
             end
+            
+        // APPEND DATA TO QUEUE (NAN CASE)
+        end else if(inputKey == 13 && tempNumber[12] >= 10**12) begin
+            push <= 1;
+            if(i == 0) dataIn <= 10; // NEWLINE
+            else if(i == 1) dataIn <= 13; // RETURN CARRIAGE
+            else if(i == 2) dataIn <= " ";
+            else if(i == 3) dataIn <= "N";
+            else if(i == 4) dataIn <= "A";
+            else if(i == 5) dataIn <= "N";
+            else if(6 <= i && i <= 15) dataIn <= " ";
+            else if(i == 16) dataIn <= ">";
+            else if(i == 17) dataIn <= " ";
+            if (i<18) i <= i+1;
+            else begin
+                push <= 0;
+                inputKey <= 0;
+                i <= 0;
+            end
+         
         // APPEND DATA TO QUEUE (NUMBER CASE)
         end else if((48 <= inputKey && inputKey <= 57) 
                     || toMode(inputKey) != 7 

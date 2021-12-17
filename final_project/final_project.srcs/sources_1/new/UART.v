@@ -47,7 +47,7 @@ module UART #(
         .received(received), 
         .bitIn(RsRx), 
         .clk(baud)
-        );    
+        );
     
     wire sent;
     wire enable;

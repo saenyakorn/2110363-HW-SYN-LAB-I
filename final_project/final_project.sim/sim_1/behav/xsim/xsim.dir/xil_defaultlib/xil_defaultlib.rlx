@@ -3,7 +3,9 @@
 Jun 10 2021
 20:04:57
 D:/vivado_project/final_project/final_project.sim/sim_1/behav/xsim/glbl.v,1623370582,verilog,,,,glbl,,,,,,,,
+D:/vivado_project/final_project/final_project.srcs/sim_1/new/TestSQRT.v,1639726130,verilog,,,,TestSQRT,,,,,,,,
 D:/vivado_project/final_project/final_project.srcs/sim_1/new/TestUART.v,1639650352,verilog,,,,TestUART,,,,,,,,
 D:/vivado_project/final_project/final_project.srcs/sources_1/new/Queue.v,1639652406,verilog,,D:/vivado_project/final_project/final_project.srcs/sources_1/new/TransformData.v,,Queue,,,,,,,,
+D:/vivado_project/final_project/final_project.srcs/sources_1/new/SQRT.v,1639726706,verilog,,D:/vivado_project/final_project/final_project.srcs/sim_1/new/TestSQRT.v,,SQRT,,,,,,,,
 D:/vivado_project/final_project/final_project.srcs/sources_1/new/TransformData.v,1639675156,verilog,,D:/vivado_project/final_project/final_project.srcs/sources_1/new/UART.v,,TransformData,,,,,,,,
 D:/vivado_project/final_project/final_project.srcs/sources_1/new/UART.v,1639651884,verilog,,D:/vivado_project/final_project/final_project.srcs/sim_1/new/TestUART.v,,BaudrateGenerator;UART;UART_RX;UART_TX,,,,,,,,
