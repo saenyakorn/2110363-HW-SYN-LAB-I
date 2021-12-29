@@ -1,0 +1,9 @@
+0.7
+2020.2
+Jun 10 2021
+20:04:57
+D:/vivado_project/skill_test/skill_test.sim/sim_1/behav/xsim/glbl.v,1623370582,verilog,,,,glbl,,,,,,,,
+D:/vivado_project/skill_test/skill_test.srcs/sim_1/new/TestClockDiv.v,1633778430,verilog,,,,TestClockDiv,,,,,,,,
+D:/vivado_project/skill_test/skill_test.srcs/sim_1/new/TestDisplay.v,1633711646,verilog,,,,TestConvertor;TestDisplay,,,,,,,,
+D:/vivado_project/skill_test/skill_test.srcs/sources_1/new/ClockDiv.v,1633710144,verilog,,D:/vivado_project/skill_test/skill_test.srcs/sim_1/new/TestClockDiv.v,,ClockDiv,,,,,,,,
+D:/vivado_project/skill_test/skill_test.srcs/sources_1/new/Display.v,1633683676,verilog,,D:/vivado_project/skill_test/skill_test.srcs/sim_1/new/TestDisplay.v,,Display;HexToSevenSegment,,,,,,,,
